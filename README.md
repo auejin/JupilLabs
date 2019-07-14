@@ -1,5 +1,5 @@
 # JupilLabs
-This project receives data from Pupil Labs with ZeroMQ and Message Pack. This project is fully implemented with Processing, but can be used as a Java-binding to receive Pupil Labs data.
+This project receives data from [Pupil Labs](https://pupil-labs.com/) with [ZeroMQ](http://zeromq.org/) and [Message Pack](https://msgpack.org/). This project is fully implemented with Processing, but can be used as a Java-binding to receive Pupil Labs data.
 
 
 
