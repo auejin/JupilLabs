@@ -68,10 +68,7 @@ String unpackTopic(MessageUnpacker unpacker) {
   try{
     String rtn = "";
     while (unpacker.hasNext()) {
-      // [Advanced] You can check the detailed data format with getNextFormat()
-      // Here is a list of message pack data format: https://github.com/msgpack/msgpack/blob/master/spec.md#overview
       MessageFormat format = unpacker.getNextFormat();
-      // You can also use unpackValue to extract a value of any type
       Value v = unpacker.unpackValue();
       IntegerValue iv = v.asIntegerValue();
       int i = iv.toInt();
@@ -84,15 +81,10 @@ String unpackTopic(MessageUnpacker unpacker) {
 }
 
 
-//https://github.com/msgpack/msgpack-java/blob/develop/msgpack-core/src/test/java/org/msgpack/core/example/MessagePackExample.java
 Object unpackPayload(MessageUnpacker unpacker) {
   try{
     while (unpacker.hasNext()) {
-      // [Advanced] You can check the detailed data format with getNextFormat()
-      // Here is a list of message pack data format: https://github.com/msgpack/msgpack/blob/master/spec.md#overview
       MessageFormat format = unpacker.getNextFormat();
-    
-      // You can also use unpackValue to extract a value of any type
       Value v = unpacker.unpackValue();
       switch (v.getValueType()) { // == format.getValueType()
         case NIL:
@@ -136,7 +128,6 @@ Object unpackPayload(MessageUnpacker unpacker) {
           Map<Object, Object> rtn_map = new HashMap<Object, Object>();
           for (Map.Entry entry : map.entrySet())
           {
-            //System.out.println("key: " + entry.getKey() + "; value: " + entry.getValue());
             JSONObject j = null;
             JSONArray ja = null;
             try {
