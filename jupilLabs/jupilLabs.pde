@@ -22,10 +22,17 @@ void settings() {
 }
 
 void setup() {
-  
+  while(true){
+    thread("threadFunc");
+    delay(15);
+  } // higher frequency than draw()
 }
 
 void draw() {  
+  
+}
+
+void threadFunc(){
   println("TOPIC : ");
   byte[] bytes = subscriber.recv();
   MessageUnpacker unpacker = MessagePack.newDefaultUnpacker(bytes);
@@ -46,6 +53,9 @@ void draw() {
   }
   println();
 }
+
+
+///------===== ZEROMQ RECEIVER =====-----//
 
 // port can be moditied at GUI
 void subsribeZeroMQ(String address, String port, String filter){
@@ -79,7 +89,6 @@ String unpackTopic(MessageUnpacker unpacker) {
     return "";
   }
 }
-
 
 Object unpackPayload(MessageUnpacker unpacker) {
   try{
