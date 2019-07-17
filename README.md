@@ -13,67 +13,72 @@ Each payload is parsed as `HashMap<String, Object>`. Hashmap and array values in
 Available with [msgpack-java(0.8.x)](https://github.com/msgpack/msgpack-java) and [jeromq (0.4.x)](https://github.com/zeromq/jeromq). Necessary JARs are included in this repo.
 
 
-## Sample Output
+
+## Example
+
+On this example, the topic is set as `pupil.0`. And each entry of the corresponding payload was printed in the following form of `key, (class of value) value`.
+
 ```json
 TOPIC : 
 pupil.0
 PAYLOAD : 
-(java.lang.String)  3d c++
-(java.lang.Double)  0.9920317806850061
-(processing.data.JSONObject)  {
+method,  (java.lang.String)  3d c++
+confidence,  (java.lang.Double)  0.9999968162820061
+circle_3d,  (processing.data.JSONObject)  {
   "normal": [
-    -0.4450478297740828,
-    0.4464538015681454,
-    -0.7762805113351294
+    -0.5484866533710238,
+    0.4110233246651724,
+    -0.7281635926459402
   ],
   "center": [
-    -8.278593196747561,
-    8.265014934933978,
-    74.14484388676804
+    -3.3799455415836395,
+    3.253979022642664,
+    80.5431014420888
   ],
-  "radius": 2.1820955751403397
+  "radius": 2.5197866827996807
 }
-(processing.data.JSONObject)  {
+projected_sphere,  (processing.data.JSONObject)  {
   "center": [
-    74.17436682741496,
-    117.59943014161865
+    118.23511194920195,
+    84.34527179228537
   ],
   "axes": [
-    178.28855206495257,
-    178.28855206495257
+    166.66467939600741,
+    166.66467939600741
   ],
   "angle": 90
 }
-(java.lang.Long)  293
-(java.lang.Double)  4.364191150280679
-(java.lang.Double)  2.033594640578971
-(java.lang.Double)  0.49359430993621833
-(java.lang.Double)  -2.0913580962913323
-(java.lang.Double)  36.4996983066617
-(java.lang.Double)  268386.563916
-(processing.data.JSONObject)  {
+model_id,  (java.lang.Long)  55
+diameter_3d,  (java.lang.Double)  5.039573365599361
+theta,  (java.lang.Double)  1.9943726335943859
+model_confidence,  (java.lang.Double)  0.6987836400925818
+phi,  (java.lang.Double)  -2.216371938616329
+diameter,  (java.lang.Double)  38.80314654787235
+model_birth_timestamp,  (java.lang.Double)  92728.483758
+sphere,  (processing.data.JSONObject)  {
   "center": [
-    -2.9380192394585674,
-    2.907569316116233,
-    83.4602100227896
+    3.2018942988686456,
+    -1.6783008733394045,
+    89.28106455384008
   ],
   "radius": 12
 }
-(java.lang.String)  pupil.0
-(processing.data.JSONObject)  {
+topic,  (java.lang.String)  pupil.0
+ellipse,  (processing.data.JSONObject)  {
   "center": [
-    26.93606648365646,
-    164.94976654515446
+    70.21255306995407,
+    120.87811158262909
   ],
   "axes": [
-    24.708057857245617,
-    36.4996983066617
+    26.722480275145124,
+    38.80314654787235
   ],
-  "angle": -45.07328332841831
+  "angle": -37.21570741645479
 }
-(processing.data.JSONArray)  [
-  0.14029201293571072,
-  0.14088663257732048
+norm_pos,  (processing.data.JSONArray)  [
+  0.36569038057267744,
+  0.3704265021738068
 ]
-(java.lang.Long)  0
+id,  (java.lang.Long)  0
+timestamp,  (java.lang.Double)  92756.531689
 ```
