@@ -16,7 +16,7 @@ Available with [msgpack-java(0.8.x)](https://github.com/msgpack/msgpack-java) an
 
 ## Example
 
-On this example, the topic is set as `pupil.0`. And each entry of the corresponding payload was printed in the following form of `key, (class of value) value`.
+On this example, the topic is set as `pupil.0`. And each entry of the corresponding payload is printed in the following form of `key, (class of value) value`.
 
 ```json
 TOPIC : 
