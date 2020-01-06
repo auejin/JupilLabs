@@ -10,9 +10,18 @@ Each payload is parsed as `HashMap<String, Object>`. Hashmap and array values in
 
 
 ## Dependencies
-Available with [msgpack-java(0.8.x)](https://github.com/msgpack/msgpack-java) and [jeromq (0.4.x)](https://github.com/zeromq/jeromq). Necessary JARs are included in this repo.
 
+Available with [msgpack-java(0.8.x)](https://github.com/msgpack/msgpack-java) and [jeromq (0.4.x)](https://github.com/zeromq/jeromq). Necessary JARs are included in this repo. Tested on Processing 3.5.3, Windows 10.
 
+## Citation
+
+```
+@misc{park2018wooting,
+title={A Processing Library for WootingKeyboard},
+author={Shinhoo Park, Sunjun Kim, Byungjoo Lee},
+year={2018}
+}
+```
 
 ## Example
 
