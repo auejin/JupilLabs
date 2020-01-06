@@ -1,5 +1,5 @@
 # JupilLabs
-This project receives data from [Pupil Labs](https://pupil-labs.com/) with [ZeroMQ](http://zeromq.org/) and [Message Pack](https://msgpack.org/). This project is fully implemented with Processing, but can be used as a Java-binding to receive Pupil Labs data.
+This project receives data from [Pupil Labs](https://pupil-labs.com/) with [ZeroMQ](http://zeromq.org/) and [Message Pack](https://msgpack.org/). This project is fully implemented with Processing, but can be used in any java projects to receive Pupil Labs data as JSON Objects.
 
 
 
@@ -16,10 +16,10 @@ Available with [msgpack-java(0.8.x)](https://github.com/msgpack/msgpack-java) an
 ## Citation
 
 ```
-@misc{park2018wooting,
-title={A Processing Library for WootingKeyboard},
-author={Shinhoo Park, Sunjun Kim, Byungjoo Lee},
-year={2018}
+@misc{ham2019jupillabs,
+title={A JSON-binding tool for Pupil Labs},
+author={Auejin Ham, Sang Yoon Lee, Byungjoo Lee},
+year={2019}
 }
 ```
 
