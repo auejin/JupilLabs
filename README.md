@@ -17,7 +17,7 @@ Available with [msgpack-java(0.8.x)](https://github.com/msgpack/msgpack-java) an
 
 ```
 @misc{ham2019jupillabs,
-title={A JSON-binding tool for Pupil Labs},
+title={A JSON parser for Pupil Labs},
 author={Auejin Ham, Sang Yoon Lee, Byungjoo Lee},
 year={2019}
 }
